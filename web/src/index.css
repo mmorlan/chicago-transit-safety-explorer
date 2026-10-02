@@ -1,0 +1,46 @@
+:root {
+  --header-bg: #1f2a36;
+  --header-text: #f4f6f8;
+  font-family: "Avenir Next", system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app-header {
+  padding: 0.75rem 1rem;
+  background: var(--header-bg);
+  color: var(--header-text);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.app-header p {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.app-main {
+  flex: 1;
+  min-height: 0;
+}
+
+arcgis-map {
+  display: block;
+  height: 100%;
+}
